@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+.titulo {
+  padding: 80px;
+  text-align: center;
+  background: #cf0808;
+  color: rgb(0, 0, 0);
+}
+
+.titulo h1 {
+  font-size: 50px;
+}
+div.menu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.menu a:hover {
+  background-color: #777;
+}
+</style>
+</head>
+<body>
+
+<div class="titulo">
+<h1><front size=10><script>
+    var text="Proyecto LB"
+    var speed=30
+    if (document.all||document.getElementById){
+    document.write('<span id="highlight">' + text + '</span>')
+    var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+    }
+    else
+    document.write(text)
+    var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+    var r=1
+    var g=1
+    var b=1
+    var seq=1
+    function changetext(){
+    rainbow="#"+hex[r]+hex[g]+hex[b]
+    storetext.style.color=rainbow
+    }
+    function change(){
+    if (seq==6){
+    b--
+    if (b==0)
+    seq=1
+    }
+    if (seq==5){
+    r++
+    if (r==12)
+    seq=6
+    }
+    if (seq==4){
+    g--
+    if (g==0)
+    seq=5
+    }
+    if (seq==3){
+    b++
+    if (b==12)
+    seq=4
+    }
+    if (seq==2){
+    r--
+    if (r==0)
+    seq=3
+    }
+    if (seq==1){
+    g++
+    if (g==12)
+    seq=2
+    }
+    changetext()
+    }
+    function starteffect(){
+    if (document.all||document.getElementById)
+    flash=setInterval("change()",speed)
+    }
+    starteffect()
+    </script></front></h1>
+      <p>Por: Una persona  </p>
+</div>
+<div class="menu">
+  <a href="#"> Tráfico ilegal de animales </a>
+  <a href="#">Animales marinos</a>
+  <a href="https://www.nationalgeographic.com.es/ciencia/naturaleza-salvaje-reconquista-ciudad-por-coronavirus_15346">maltrato animal</a>
+  <a href="https://sites.google.com/liceoboston.edu.co/los-animales-en-las-calles/página-principal?authuser=1">Animales en las calles</a>
+  <a href="">Beneficios que han tenido los animales salvajes</a>
+ </div>
+ <div class="Infromacion">
+  <p>NO OLVIDES LAS FECHAS IMPORTANTES
+    Iremos publicando las fechas importantes que debes tener en cuenta:
+    
+    Plazo de inscripción de proyectos y de grupos: 18 de mayo de 2020.
+    
+    Primeros acercamientos al proyecto: 18 de mayo - 22 de mayo.
+    
+    Escoger asesor principal del proyecto: 22 de mayo (jornada escolar).
+    
+    Cita con asesor principal mostrando documento diligenciado. Ver adjunto en esta página. (26-29 mayo) DEBES HACER UNA COPIA DEL DOCUMENTO PARA QUE NO MODIFIQUES EL GENERAL.</p>
+    </div>
+</div>
+</body>
+</html>
